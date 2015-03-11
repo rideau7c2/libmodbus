@@ -33,7 +33,7 @@ int main(int argc, char*argv[])
     uint8_t *query;
     int header_length;
 
-    ctx = modbus_new_rtu("COM3", 115200, 'N', 8, 1);
+    ctx = modbus_new_rtu("COM7", 115200, 'N', 8, 1);
     modbus_set_slave(ctx, SERVER_ID);
     query = malloc(MODBUS_RTU_MAX_ADU_LENGTH);
 

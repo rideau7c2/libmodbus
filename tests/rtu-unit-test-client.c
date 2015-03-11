@@ -53,7 +53,7 @@ int main(int argc, char *argv[])
     int success = FALSE;
 
 
-    ctx = modbus_new_rtu("COM1", 115200, 'N', 8, 1);
+    ctx = modbus_new_rtu("COM6", 115200, 'N', 8, 1);
     
     if (ctx == NULL) {
         fprintf(stderr, "Unable to allocate libmodbus context\n");
